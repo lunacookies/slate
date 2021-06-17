@@ -22,7 +22,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule(
         "editorLineNumber.foreground",
-        palette.base(BaseScale::DarkFg),
+        palette.base(BaseScale::DarkerFg),
     );
     builder.add_workspace_rule(
         "editorLineNumber.activeForeground",
@@ -33,11 +33,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         &["activityBar.background", "sideBar.background"],
         palette.base(BaseScale::DarkBg),
     );
-    builder.add_workspace_rule("sideBar.foreground", palette.base(BaseScale::FadedFg));
+    builder.add_workspace_rule("sideBar.foreground", palette.base(BaseScale::DarkFg));
     builder.add_workspace_rule("activityBar.foreground", palette.base(BaseScale::Fg));
     builder.add_workspace_rule(
         "activityBar.inactiveForeground",
-        palette.base(BaseScale::DarkFg),
+        palette.base(BaseScale::DarkerFg),
     );
 
     builder.add_workspace_rules(
@@ -48,13 +48,16 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         ],
         palette.base(BaseScale::DarkerBg),
     );
-    builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::FadedFg));
+    builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DarkFg));
 
-    builder.add_workspace_rule("editorCodeLens.foreground", palette.base(BaseScale::DarkFg));
+    builder.add_workspace_rule(
+        "editorCodeLens.foreground",
+        palette.base(BaseScale::DarkerFg),
+    );
 
     builder.add_workspace_rule(
         "rust_analyzer.inlayHints.foreground",
-        palette.base(BaseScale::DarkFg),
+        palette.base(BaseScale::DarkerFg),
     );
 }
 

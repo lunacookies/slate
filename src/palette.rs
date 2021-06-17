@@ -47,8 +47,8 @@ pub(crate) enum BaseScale {
     DarkBg,
     Bg,
     LightBg,
+    DarkerFg,
     DarkFg,
-    FadedFg,
     Fg,
     BrightFg,
 }
@@ -60,7 +60,7 @@ impl BaseScale {
 
     fn chroma(self) -> f32 {
         match self {
-            Self::FadedFg | Self::Fg | Self::BrightFg => 0.017,
+            Self::DarkFg | Self::Fg | Self::BrightFg => 0.017,
             _ => lerp(self.value(), 0.018..0.03),
         }
     }
@@ -71,8 +71,8 @@ impl BaseScale {
             Self::DarkBg => 0.03,
             Self::Bg => 0.06,
             Self::LightBg => 0.09,
-            Self::DarkFg => 0.5,
-            Self::FadedFg => 0.6,
+            Self::DarkerFg => 0.5,
+            Self::DarkFg => 0.6,
             Self::Fg => 0.8,
             Self::BrightFg => 1.0,
         }
