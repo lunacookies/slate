@@ -86,6 +86,22 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::DarkBg));
     builder.add_workspace_rule("editorWidget.border", palette.base(BaseScale::DarkestBg));
 
+    builder.add_workspace_rules(
+        &[
+            "editor.findMatchBackground",
+            "editor.findMatchHighlightBackground",
+        ],
+        palette.base(BaseScale::LighterBg),
+    );
+    builder.add_workspace_rules(
+        &[
+            "editor.findMatchBorder",
+            "editorOverviewRuler.findMatchForeground",
+            "minimap.findMatchHighlight",
+        ],
+        palette.blue(),
+    );
+
     builder.add_workspace_rule("input.background", palette.base(BaseScale::DarkestBg));
 
     builder.add_workspace_rules(
