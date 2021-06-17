@@ -46,6 +46,20 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rules(
         &[
+            "statusBar.background",
+            "statusBar.noFolderBackground",
+            "statusBar.debuggingBackground",
+        ],
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rules(
+        &["statusBar.foreground", "statusBar.noFolderForeground"],
+        palette.base(BaseScale::DarkFg),
+    );
+    builder.add_workspace_rule("statusBar.debuggingForeground", palette.orange());
+
+    builder.add_workspace_rules(
+        &[
             "editorGroupHeader.tabsBackground",
             "tab.inactiveBackground",
             "tab.border",
