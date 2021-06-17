@@ -25,6 +25,7 @@
 		"editorGroupHeader.tabsBackground": "#1B1F28",
 		"tab.inactiveBackground": "#1B1F28",
 		"tab.border": "#1B1F28",
+		"tab.activeForeground": "#AEB4BF",
 		"tab.inactiveForeground": "#868B96",
 		"editorCodeLens.foreground": "#707786",
 		"rust_analyzer.inlayHints.foreground": "#707786"

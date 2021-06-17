@@ -66,6 +66,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         ],
         palette.base(BaseScale::DarkerBg),
     );
+    builder.add_workspace_rule("tab.activeForeground", palette.base(BaseScale::Fg));
     builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DarkFg));
 
     builder.add_workspace_rule(
