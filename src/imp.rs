@@ -118,14 +118,14 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
 
     builder.add_workspace_rule(
         "scrollbarSlider.background",
-        palette.base(BaseScale::LighterBg),
+        (palette.base(BaseScale::LighterBg), 0x66),
     );
     builder.add_workspace_rules(
         &[
             "scrollbarSlider.hoverBackground",
             "scrollbarSlider.activeBackground",
         ],
-        palette.base(BaseScale::DarkerFg),
+        (palette.base(BaseScale::LighterBg), 0xAA),
     );
     builder.add_workspace_rule(
         "editorOverviewRuler.border",
