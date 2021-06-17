@@ -15,6 +15,9 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::Fg),
     );
 
+    builder.add_workspace_rule("editorCursor.background", palette.base(BaseScale::Bg));
+    builder.add_workspace_rule("editorCursor.foreground", palette.base(BaseScale::BrightFg));
+
     builder.add_workspace_rule(
         "editor.lineHighlightBackground",
         palette.base(BaseScale::LightBg),
