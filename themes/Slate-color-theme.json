@@ -37,6 +37,11 @@
 		"tab.border": "#1D222B",
 		"tab.activeForeground": "#B7BDC8",
 		"tab.inactiveForeground": "#828892",
+		"editorGroup.border": "#141821",
+		"scrollbarSlider.background": "#464C58",
+		"scrollbarSlider.hoverBackground": "#6C7382",
+		"scrollbarSlider.activeBackground": "#6C7382",
+		"editorOverviewRuler.border": "#464C58",
 		"editorCodeLens.foreground": "#6C7382",
 		"focusBorder": "#464C58",
 		"rust_analyzer.inlayHints.foreground": "#6C7382"
