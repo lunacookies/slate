@@ -5,7 +5,7 @@ pub(crate) struct Palette;
 
 impl Palette {
     pub(crate) fn base(&self, scale: BaseScale) -> Oklch {
-        oklch(scale.lightness(), scale.chroma(), 265.0)
+        oklch(scale.lightness(), scale.chroma(), scale.hue())
     }
 
     pub(crate) fn red(&self) -> Oklch {
@@ -43,6 +43,7 @@ impl Palette {
 
 #[derive(Debug, Clone, Copy)]
 pub(crate) enum BaseScale {
+    DarkestBg,
     DarkerBg,
     DarkBg,
     Bg,
@@ -56,7 +57,7 @@ pub(crate) enum BaseScale {
 
 impl BaseScale {
     fn lightness(self) -> f32 {
-        lerp(self.value(), 0.24..0.9)
+        lerp(self.value(), 0.21..0.9)
     }
 
     fn chroma(self) -> f32 {
@@ -66,12 +67,20 @@ impl BaseScale {
         }
     }
 
+    fn hue(self) -> f32 {
+        match self {
+            Self::Bg | Self::LightBg => 265.0,
+            _ => 263.0,
+        }
+    }
+
     fn value(self) -> f32 {
         match self {
-            Self::DarkerBg => 0.0,
-            Self::DarkBg => 0.03,
-            Self::Bg => 0.06,
-            Self::LightBg => 0.09,
+            Self::DarkestBg => 0.0,
+            Self::DarkerBg => 0.06,
+            Self::DarkBg => 0.08,
+            Self::Bg => 0.1,
+            Self::LightBg => 0.13,
             Self::LighterBg => 0.3,
             Self::DarkerFg => 0.5,
             Self::DarkFg => 0.6,

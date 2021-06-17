@@ -62,6 +62,10 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_workspace_rule("statusBar.debuggingForeground", palette.orange());
 
+    builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::DarkBg));
+
+    builder.add_workspace_rule("input.background", palette.base(BaseScale::DarkestBg));
+
     builder.add_workspace_rules(
         &[
             "editorGroupHeader.tabsBackground",
@@ -77,6 +81,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         "editorCodeLens.foreground",
         palette.base(BaseScale::DarkerFg),
     );
+
+    builder.add_workspace_rule("focusBorder", palette.base(BaseScale::LighterBg));
 
     builder.add_workspace_rule(
         "rust_analyzer.inlayHints.foreground",
