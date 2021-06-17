@@ -1,3 +1,3 @@
 # Slate
 
-A colourful theme for VS Code based on Xcode’s themes.
+A VS Code theme based heavily on [Spacegray for Sublime Text](https://github.com/kkga/spacegray).
