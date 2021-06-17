@@ -62,6 +62,24 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
     builder.add_workspace_rule("statusBar.debuggingForeground", palette.orange());
 
+    builder.add_workspace_rules(
+        &[
+            "list.activeSelectionBackground",
+            "list.inactiveSelectionBackground",
+            "list.focusBackground",
+            "list.hoverBackground",
+        ],
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule(
+        "list.activeSelectionForeground",
+        palette.base(BaseScale::Fg),
+    );
+    builder.add_workspace_rule(
+        "list.highlightForeground",
+        palette.base(BaseScale::BrightFg),
+    );
+
     builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::DarkBg));
     builder.add_workspace_rule("editorWidget.border", palette.base(BaseScale::DarkestBg));
 
