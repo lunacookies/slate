@@ -24,6 +24,7 @@
 		"statusBar.noFolderForeground": "#828892",
 		"statusBar.debuggingForeground": "#C5907E",
 		"editorWidget.background": "#20252F",
+		"editorWidget.border": "#141821",
 		"input.background": "#141821",
 		"editorGroupHeader.tabsBackground": "#1D222B",
 		"tab.inactiveBackground": "#1D222B",

@@ -63,6 +63,7 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("statusBar.debuggingForeground", palette.orange());
 
     builder.add_workspace_rule("editorWidget.background", palette.base(BaseScale::DarkBg));
+    builder.add_workspace_rule("editorWidget.border", palette.base(BaseScale::DarkestBg));
 
     builder.add_workspace_rule("input.background", palette.base(BaseScale::DarkestBg));
 
