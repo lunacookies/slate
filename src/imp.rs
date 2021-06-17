@@ -20,7 +20,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::LightBg),
     );
     builder.add_workspace_rules(
-        &["editor.selectionBackground", "selection.background"],
+        &[
+            "editor.selectionBackground",
+            "selection.background",
+            "minimap.selectionHighlight",
+        ],
         palette.base(BaseScale::LighterBg),
     );
 
