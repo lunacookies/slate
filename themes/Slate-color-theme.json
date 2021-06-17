@@ -1,0 +1,110 @@
+// Do not edit directly; this file is generated.
+{
+	"name": "Slate",
+	"type": "dark",
+	"colors": {
+		"editor.background": "#22262F",
+		"editor.foreground": "#B0B6C1",
+		"foreground": "#B0B6C1"
+	},
+	"semanticHighlighting": true,
+	"semanticTokenColors": {
+		"keyword": {
+			"foreground": "#B48EAD",
+			"fontStyle": ""
+		},
+		"function": {
+			"foreground": "#8FA1B3",
+			"fontStyle": ""
+		},
+		"method": {
+			"foreground": "#8FA1B3",
+			"fontStyle": ""
+		},
+		"type": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"class": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"struct": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"enum": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"union": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"interface": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"builtinType": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"typeAlias": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"typeParameter": {
+			"foreground": "#EBCB8B",
+			"fontStyle": ""
+		},
+		"enumMember": {
+			"foreground": "#A3BE8C",
+			"fontStyle": ""
+		},
+		"property": {
+			"foreground": "#BF616A",
+			"fontStyle": ""
+		},
+		"string": {
+			"foreground": "#A3BE8C",
+			"fontStyle": ""
+		},
+		"character": {
+			"foreground": "#A3BE8C",
+			"fontStyle": ""
+		},
+		"number": {
+			"foreground": "#D08770",
+			"fontStyle": ""
+		},
+		"variable.constant": {
+			"foreground": "#D08770",
+			"fontStyle": ""
+		},
+		"variable.static": {
+			"foreground": "#D08770",
+			"fontStyle": ""
+		},
+		"escapeSequence": {
+			"foreground": "#96B5B4",
+			"fontStyle": ""
+		},
+		"formatSpecifier": {
+			"foreground": "#AB7967",
+			"fontStyle": ""
+		},
+		"macro": {
+			"foreground": "#96B5B4",
+			"fontStyle": ""
+		},
+		"lifetime": {
+			"foreground": "#AB7967",
+			"fontStyle": ""
+		},
+		"comment": {
+			"foreground": "#D8DEEA",
+			"italic": true
+		}
+	},
+	"tokenColors": []
+}
