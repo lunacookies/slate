@@ -10,95 +10,95 @@
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
 		"keyword": {
-			"foreground": "#B791AD",
+			"foreground": "#BA8EB0",
 			"fontStyle": ""
 		},
 		"function": {
-			"foreground": "#91A0B1",
+			"foreground": "#8CA1B7",
 			"fontStyle": ""
 		},
 		"method": {
-			"foreground": "#91A0B1",
+			"foreground": "#8CA1B7",
 			"fontStyle": ""
 		},
 		"type": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"class": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"struct": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"enum": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"union": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"interface": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"builtinType": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"typeAlias": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"typeParameter": {
-			"foreground": "#E9CA89",
+			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
 		"enumMember": {
-			"foreground": "#9FB788",
+			"foreground": "#90A879",
 			"fontStyle": ""
 		},
 		"property": {
-			"foreground": "#BD5F69",
+			"foreground": "#C4757B",
 			"fontStyle": ""
 		},
 		"string": {
-			"foreground": "#9FB788",
+			"foreground": "#90A879",
 			"fontStyle": ""
 		},
 		"character": {
-			"foreground": "#9FB788",
+			"foreground": "#90A879",
 			"fontStyle": ""
 		},
 		"number": {
-			"foreground": "#D4896E",
+			"foreground": "#C5907E",
 			"fontStyle": ""
 		},
 		"variable.constant": {
-			"foreground": "#D4896E",
+			"foreground": "#C5907E",
 			"fontStyle": ""
 		},
 		"variable.static": {
-			"foreground": "#D4896E",
+			"foreground": "#C5907E",
 			"fontStyle": ""
 		},
 		"escapeSequence": {
-			"foreground": "#9FBBBA",
+			"foreground": "#82A7A6",
 			"fontStyle": ""
 		},
 		"formatSpecifier": {
-			"foreground": "#A57260",
+			"foreground": "#96796E",
 			"fontStyle": ""
 		},
 		"macro": {
-			"foreground": "#9FBBBA",
+			"foreground": "#82A7A6",
 			"fontStyle": ""
 		},
 		"lifetime": {
-			"foreground": "#A57260",
+			"foreground": "#96796E",
 			"fontStyle": ""
 		},
 		"comment": {
