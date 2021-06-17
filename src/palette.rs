@@ -44,6 +44,7 @@ impl Palette {
 #[derive(Debug, Clone, Copy)]
 pub(crate) enum BaseScale {
     Bg,
+    FadedFg,
     Fg,
     BrightFg,
 }
@@ -54,12 +55,16 @@ impl BaseScale {
     }
 
     fn chroma(self) -> f32 {
-        lerp(self.value(), 0.018..0.017)
+        match self {
+            Self::Fg | Self::BrightFg => 0.017,
+            _ => lerp(self.value(), 0.018..0.05),
+        }
     }
 
     fn value(self) -> f32 {
         match self {
             Self::Bg => 0.0,
+            Self::FadedFg => 0.5,
             Self::Fg => 0.8,
             Self::BrightFg => 1.0,
         }

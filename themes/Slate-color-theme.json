@@ -5,7 +5,9 @@
 	"colors": {
 		"editor.background": "#22262F",
 		"editor.foreground": "#B0B6C1",
-		"foreground": "#B0B6C1"
+		"foreground": "#B0B6C1",
+		"editorCodeLens.foreground": "#727C91",
+		"rust_analyzer.inlayHints.foreground": "#727C91"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {

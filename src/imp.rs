@@ -14,6 +14,16 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         &["editor.foreground", "foreground"],
         palette.base(BaseScale::Fg),
     );
+
+    builder.add_workspace_rule(
+        "editorCodeLens.foreground",
+        palette.base(BaseScale::FadedFg),
+    );
+
+    builder.add_workspace_rule(
+        "rust_analyzer.inlayHints.foreground",
+        palette.base(BaseScale::FadedFg),
+    );
 }
 
 fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
