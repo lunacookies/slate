@@ -116,6 +116,8 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.base(BaseScale::LighterBg),
     );
 
+    builder.add_workspace_rule("editorLightBulb.foreground", palette.yellow());
+
     builder.add_workspace_rule(
         "editorCodeLens.foreground",
         palette.base(BaseScale::DarkerFg),

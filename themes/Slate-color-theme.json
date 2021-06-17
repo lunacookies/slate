@@ -44,6 +44,7 @@
 		"scrollbarSlider.hoverBackground": "#6F7684",
 		"scrollbarSlider.activeBackground": "#6F7684",
 		"editorOverviewRuler.border": "#4A505C",
+		"editorLightBulb.foreground": "#E3CB99",
 		"editorCodeLens.foreground": "#6F7684",
 		"focusBorder": "#4A505C",
 		"rust_analyzer.inlayHints.foreground": "#6F7684"
