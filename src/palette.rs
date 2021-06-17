@@ -60,7 +60,7 @@ impl BaseScale {
     fn chroma(self) -> f32 {
         match self {
             Self::FadedFg | Self::Fg | Self::BrightFg => 0.017,
-            _ => lerp(self.value(), 0.018..0.05),
+            _ => lerp(self.value(), 0.018..0.03),
         }
     }
 
