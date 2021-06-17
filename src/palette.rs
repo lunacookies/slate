@@ -75,7 +75,7 @@ impl BaseScale {
             Self::LighterBg => 0.3,
             Self::DarkerFg => 0.5,
             Self::DarkFg => 0.6,
-            Self::Fg => 0.8,
+            Self::Fg => 0.85,
             Self::BrightFg => 1.0,
         }
     }
