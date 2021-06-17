@@ -16,6 +16,11 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     );
 
     builder.add_workspace_rule(
+        "editor.lineHighlightBackground",
+        palette.base(BaseScale::LightBg),
+    );
+
+    builder.add_workspace_rule(
         "editorLineNumber.foreground",
         palette.base(BaseScale::DarkFg),
     );
