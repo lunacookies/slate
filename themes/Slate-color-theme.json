@@ -3,11 +3,20 @@
 	"name": "Slate",
 	"type": "dark",
 	"colors": {
-		"editor.background": "#22262F",
-		"editor.foreground": "#B0B6C1",
-		"foreground": "#B0B6C1",
-		"editorCodeLens.foreground": "#727C91",
-		"rust_analyzer.inlayHints.foreground": "#727C91"
+		"editor.background": "#242933",
+		"editor.foreground": "#AEB4BF",
+		"foreground": "#AEB4BF",
+		"activityBar.background": "#1F242D",
+		"sideBar.background": "#1F242D",
+		"sideBar.foreground": "#868B96",
+		"activityBar.foreground": "#AEB4BF",
+		"activityBar.inactiveForeground": "#6E778C",
+		"editorGroupHeader.tabsBackground": "#1B1F28",
+		"tab.inactiveBackground": "#1B1F28",
+		"tab.border": "#1B1F28",
+		"tab.inactiveForeground": "#868B96",
+		"editorCodeLens.foreground": "#6E778C",
+		"rust_analyzer.inlayHints.foreground": "#6E778C"
 	},
 	"semanticHighlighting": true,
 	"semanticTokenColors": {
