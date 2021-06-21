@@ -108,6 +108,10 @@
 			"foreground": "#90A879",
 			"fontStyle": ""
 		},
+		"boolean": {
+			"foreground": "#90A879",
+			"fontStyle": ""
+		},
 		"property": {
 			"foreground": "#C4757B",
 			"fontStyle": ""

@@ -167,7 +167,10 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         palette.yellow(),
     );
 
-    builder.add_rule(Semantic("enumMember"), palette.green());
+    builder.add_rules(
+        &[Semantic("enumMember"), Semantic("boolean")],
+        palette.green(),
+    );
 
     builder.add_rule(Semantic("property"), palette.red());
 
