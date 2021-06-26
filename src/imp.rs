@@ -159,13 +159,14 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
             Semantic("struct"),
             Semantic("enum"),
             Semantic("union"),
-            Semantic("interface"),
             Semantic("builtinType"),
             Semantic("typeAlias"),
             Semantic("typeParameter"),
         ],
         palette.yellow(),
     );
+    builder.add_rule(Semantic("interface"), (palette.yellow(), FontStyle::Italic));
+    builder.add_rule(Semantic("*.trait"), FontStyle::Italic);
 
     builder.add_rules(
         &[Semantic("enumMember"), Semantic("boolean")],
@@ -196,4 +197,7 @@ fn syntax_highlighting(builder: &mut ThemeBuilder, palette: &Palette) {
         Semantic("comment"),
         (palette.base(BaseScale::BrightFg), FontStyle::Italic),
     );
+
+    builder.add_rule(Semantic("*.mutable"), FontStyle::Underline);
+    builder.add_rule(Semantic("*.public.declaration"), FontStyle::Bold);
 }

@@ -88,10 +88,6 @@
 			"foreground": "#E3CB99",
 			"fontStyle": ""
 		},
-		"interface": {
-			"foreground": "#E3CB99",
-			"fontStyle": ""
-		},
 		"builtinType": {
 			"foreground": "#E3CB99",
 			"fontStyle": ""
@@ -103,6 +99,13 @@
 		"typeParameter": {
 			"foreground": "#E3CB99",
 			"fontStyle": ""
+		},
+		"interface": {
+			"foreground": "#E3CB99",
+			"italic": true
+		},
+		"*.trait": {
+			"italic": true
 		},
 		"enumMember": {
 			"foreground": "#90A879",
@@ -155,6 +158,12 @@
 		"comment": {
 			"foreground": "#D8DEEA",
 			"italic": true
+		},
+		"*.mutable": {
+			"underline": true
+		},
+		"*.public.declaration": {
+			"bold": true
 		}
 	},
 	"tokenColors": []
