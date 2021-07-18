@@ -116,6 +116,17 @@ fn workspace_colors(builder: &mut ThemeBuilder, palette: &Palette) {
     builder.add_workspace_rule("tab.inactiveForeground", palette.base(BaseScale::DarkFg));
     builder.add_workspace_rule("editorGroup.border", palette.base(BaseScale::DarkestBg));
 
+    builder.add_workspace_rules(
+        &["titleBar.activeBackground", "titleBar.inactiveBackground"],
+        palette.base(BaseScale::LightBg),
+    );
+    builder.add_workspace_rule("titleBar.activeForeground", palette.base(BaseScale::Fg));
+    builder.add_workspace_rule(
+        "titleBar.inactiveForeground",
+        palette.base(BaseScale::DarkFg),
+    );
+    builder.add_workspace_rule("titleBar.border", palette.base(BaseScale::LighterBg));
+
     builder.add_workspace_rule(
         "scrollbarSlider.background",
         (palette.base(BaseScale::LighterBg), 0x66),
